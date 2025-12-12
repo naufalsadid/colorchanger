@@ -1,0 +1,5 @@
+{
+  "name": "AI UGC - Pengganti Warna Produk",
+  "description": "Alat berbasis web untuk mengubah warna produk secara otomatis menggunakan Gemini AI.",
+  "requestFramePermissions": []
+}
