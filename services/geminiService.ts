@@ -22,7 +22,7 @@ export const replaceProductColor = async (
     throw new Error("API Key tidak ditemukan. Pastikan environment variable process.env.API_KEY telah dikonfigurasi.");
   }
 
-  const ai = new GoogleGenAI({ apiKey });
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
   // Construct dynamic prompt
   let prompt = `Tugas: Edit gambar produk fashion/item berikut.`;
