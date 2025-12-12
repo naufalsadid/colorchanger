@@ -16,7 +16,7 @@ export const replaceProductColor = async (
   additionalInstruction?: string
 ): Promise<string> => {
   // Mengambil API Key langsung dari environment variable
-  const apiKey = import.meta.env.VITE_API_KEY;
+  const apiKey = process.env.API_KEY;
   
   if (!apiKey) {
     throw new Error("API Key tidak ditemukan. Pastikan environment variable process.env.API_KEY telah dikonfigurasi.");
